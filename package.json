@@ -1,0 +1,20 @@
+{
+  "name": "fetch-plugin",
+  "version": "1.0.0",
+  "description": "",
+  "main": "plugin.js",
+  "scripts": {
+    "build": "node esbuild.js && extism-js dist/index.js -i src/index.d.ts -o dist/plugin.wasm"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "types": "./plugin.d.ts",
+  "devDependencies": {
+    "esbuild": "^0.20.2"
+  },
+  "dependencies": {
+    "jsdom": "^24.0.0",
+    "require": "^2.4.20"
+  }
+}
